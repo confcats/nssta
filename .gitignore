@@ -25,8 +25,10 @@ web/sites/simpletest
 vendor
 web/core
 web/modules/README.txt
+web/modules/contrib
 web/profiles/README.txt
 web/themes/README.txt
+web/themes/contrib
 web/sites/README.txt
 web/sites/example.sites.php
 web/sites/example.settings.local.php
@@ -48,6 +50,10 @@ web/robots.txt
 web/update.php
 web/web.config
 
-# database files
+# Database Files
 *.sql
 *.sql.gz
+*.gz
+
+# Production Settings
+prod.settings.php
