@@ -1,0 +1,20 @@
+uuid: 13f8e9e2-3ed4-49d6-8456-cb0f81f04c10
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_file_libraries
+field_name: field_file_libraries
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

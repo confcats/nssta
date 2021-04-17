@@ -1,0 +1,18 @@
+uuid: b45fcf1a-45d9-4402-b79d-799290997135
+langcode: en
+status: true
+dependencies: {  }
+name: login
+label: Login
+triggers:
+  login: login
+destination_path: 'entity:node/91'
+pages_type: 0
+pages: '/user/reset/*'
+roles:
+  authenticated: authenticated
+  member: member
+  board_member: board_member
+  administrator: administrator
+weight: 0
+enabled: true

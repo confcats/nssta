@@ -1,0 +1,50 @@
+uuid: 12bfa4eb-0069-404a-8dfa-a6074295eec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.file.field_description
+    - field.field.node.file.field_file
+    - field.field.node.file.field_filetag
+    - field.field.node.file.field_thumbnail
+    - node.type.file
+  module:
+    - file
+    - text
+    - user
+id: node.file.default
+targetEntityType: node
+bundle: file
+mode: default
+content:
+  field_description:
+    type: text_default
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_file:
+    type: file_default
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_filetag:
+    type: entity_reference_label
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_thumbnail: true
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: 16d335d6-a192-41c6-ba2d-01aa157ef41d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: public_files
+label: 'Public Files'
+type: 'canonical_entities:node'
+pattern: 'files/[node:title]'
+selection_criteria:
+  a7bd8102-34ad-426a-885b-1a96af634d87:
+    id: node_type
+    bundles:
+      file: file
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a7bd8102-34ad-426a-885b-1a96af634d87
+selection_logic: and
+weight: -10
+relationships: {  }

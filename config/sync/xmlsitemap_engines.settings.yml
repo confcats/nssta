@@ -1,0 +1,7 @@
+engines:
+  bing: bing
+  google: google
+custom_urls: "http://www.google.com/webmasters/tools/ping?sitemap=[sitemap]\nhttp://www.bing.com/ping?sitemap=[sitemap]"
+minimum_lifetime: 86400
+_core:
+  default_config_hash: cufENE0oxs6iqDK4ygjKRjgR7TljgtrB1U-O03lBmgY

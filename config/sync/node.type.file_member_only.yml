@@ -1,0 +1,17 @@
+uuid: 5f03a74c-7dcf-4144-a712-14d2b6e28493
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'File (Member ONLY)'
+type: file_member_only
+description: 'These files are stored in a private area and only available to logged in members'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

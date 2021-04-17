@@ -1,0 +1,38 @@
+uuid: 113c4a0f-31d6-4d5d-9445-2dc9908ffa2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thumbnail
+    - node.type.file
+  module:
+    - image
+id: node.file.field_thumbnail
+field_name: field_thumbnail
+entity_type: node
+bundle: file
+label: Thumbnail
+description: 'This is only used for special views like "Public Resources/Literature".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'file-thumbnails/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

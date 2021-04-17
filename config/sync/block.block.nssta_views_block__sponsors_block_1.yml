@@ -1,0 +1,40 @@
+uuid: 57ff85e9-5533-4372-a686-277441d5a90c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - node
+    - views
+  theme:
+    - nssta
+id: nssta_views_block__sponsors_block_1
+theme: nssta
+region: sponsors
+weight: -19
+provider: null
+plugin: 'views_block:sponsors-block_1'
+settings:
+  id: 'views_block:sponsors-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      company: company
+      event: event
+      file: file
+      file_member_only: file_member_only
+      page: page
+      page_member_only: page_member_only
+      sponsor: sponsor
+      webform: webform
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

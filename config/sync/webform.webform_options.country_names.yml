@@ -1,0 +1,11 @@
+uuid: f3431952-98f2-444f-a444-040314914e87
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: usblpjlvFxXlxQ2nCePEvx-AnnjTc_SRdZwYMli3pHw
+id: country_names
+label: 'Country names'
+category: Geographic
+likert: false
+options: ''

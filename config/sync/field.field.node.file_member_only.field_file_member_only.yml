@@ -1,0 +1,27 @@
+uuid: b84cb0eb-f960-4be0-8840-945d921f54ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_member_only
+    - node.type.file_member_only
+  module:
+    - file
+id: node.file_member_only.field_file_member_only
+field_name: field_file_member_only
+entity_type: node
+bundle: file_member_only
+label: 'File (Member ONLY)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'library/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf xlsx xls ppt pptx doc docx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

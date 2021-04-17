@@ -1,0 +1,14 @@
+uuid: f497d033-b33e-48c3-9385-c4065ef1b5f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.pac_leadership_circle
+  module:
+    - user
+id: user_remove_role_action.pac_leadership_circle
+label: 'Remove the PAC Leadership Circle role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pac_leadership_circle

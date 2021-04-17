@@ -1,0 +1,27 @@
+uuid: 1acc50f4-8fa6-4c08-a76a-0a7d044c7d7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nssta
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: nssta_messages
+theme: nssta
+region: content
+weight: -16
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/member-portal"
+    negate: true
+    context_mapping: {  }

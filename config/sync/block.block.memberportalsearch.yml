@@ -1,0 +1,31 @@
+uuid: ff6d7c8c-964b-478f-bf5a-feee965bd3c8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bb22e6c5-66e8-46ca-ba7f-2f2e39046715'
+  module:
+    - block_content
+    - system
+  theme:
+    - nssta
+id: memberportalsearch
+theme: nssta
+region: featured_top
+weight: -16
+provider: null
+plugin: 'block_content:bb22e6c5-66e8-46ca-ba7f-2f2e39046715'
+settings:
+  id: 'block_content:bb22e6c5-66e8-46ca-ba7f-2f2e39046715'
+  label: 'Member Portal Search'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /member-portal
+    negate: false
+    context_mapping: {  }

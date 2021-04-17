@@ -1,0 +1,38 @@
+uuid: 360d17b6-5936-49ff-9943-7b7bd5fad9c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.members
+  module:
+    - node
+    - system
+  theme:
+    - nssta
+id: nssta_members
+theme: nssta
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'system_menu_block:members'
+settings:
+  id: 'system_menu_block:members'
+  label: Members
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/member-portal/partner\r\n/member-portal"
+    negate: true
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      page_member_only: page_member_only
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

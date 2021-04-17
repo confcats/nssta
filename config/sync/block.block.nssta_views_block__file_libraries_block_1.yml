@@ -1,0 +1,33 @@
+uuid: 7374ff1a-a507-44d0-884c-9842e0e0df8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.file_libraries
+  module:
+    - node
+    - views
+  theme:
+    - nssta
+id: nssta_views_block__file_libraries_block_1
+theme: nssta
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:file_libraries-block_1'
+settings:
+  id: 'views_block:file_libraries-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+      page_member_only: page_member_only
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

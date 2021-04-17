@@ -1,0 +1,14 @@
+uuid: 25197538-cb08-4d2f-a6a7-fd84b2df25fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.pac_leadership_circle
+  module:
+    - user
+id: user_add_role_action.pac_leadership_circle
+label: 'Add the PAC Leadership Circle role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: pac_leadership_circle

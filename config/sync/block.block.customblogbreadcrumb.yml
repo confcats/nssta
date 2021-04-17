@@ -1,0 +1,33 @@
+uuid: f3cd015f-3227-4c83-9a80-2ad87a5f6d68
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a62107aa-1c02-4862-9cf9-58dd39fc69e0'
+  module:
+    - block_content
+    - node
+  theme:
+    - nssta
+id: customblogbreadcrumb
+theme: nssta
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:a62107aa-1c02-4862-9cf9-58dd39fc69e0'
+settings:
+  id: 'block_content:a62107aa-1c02-4862-9cf9-58dd39fc69e0'
+  label: 'Custom Blog Breadcrumb'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

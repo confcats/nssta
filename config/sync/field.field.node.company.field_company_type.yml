@@ -1,0 +1,21 @@
+uuid: b21f61ab-7408-4ebc-bff2-4bbd9a99e49d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_type
+    - node.type.company
+  module:
+    - options
+id: node.company.field_company_type
+field_name: field_company_type
+entity_type: node
+bundle: company
+label: 'Company Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

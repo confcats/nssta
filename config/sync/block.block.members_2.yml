@@ -1,0 +1,25 @@
+uuid: b7f4bf61-9dee-446a-87d2-7b04e9991ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.members
+  module:
+    - system
+  theme:
+    - bartik
+id: members_2
+theme: bartik
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:members'
+settings:
+  id: 'system_menu_block:members'
+  label: Members
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: fc40242b-2601-40a3-afee-63b5eb1d8ada
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Contact Us'
+recipients:
+  - info@nssta.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: /

@@ -1,0 +1,32 @@
+uuid: 2f884f1f-7178-4221-adc1-6a458ff80972
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.file_libraries
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__file_libraries_block_2
+theme: bartik
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:file_libraries-block_2'
+settings:
+  id: 'views_block:file_libraries-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page_member_only: page_member_only
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

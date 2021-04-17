@@ -1,0 +1,23 @@
+uuid: 816f598f-f627-45f9-bc17-94ab497cae4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page_member_only
+  module:
+    - text
+id: node.page_member_only.body
+field_name: body
+entity_type: node
+bundle: page_member_only
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

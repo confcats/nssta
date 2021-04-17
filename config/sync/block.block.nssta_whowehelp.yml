@@ -1,0 +1,31 @@
+uuid: 1bf5dfc5-9c57-4326-8520-109fffbcbca5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1dd3c61b-37b9-4f61-8b3c-8cf9f387a748'
+  module:
+    - block_content
+    - system
+  theme:
+    - nssta
+id: nssta_whowehelp
+theme: nssta
+region: featured_top
+weight: -18
+provider: null
+plugin: 'block_content:1dd3c61b-37b9-4f61-8b3c-8cf9f387a748'
+settings:
+  id: 'block_content:1dd3c61b-37b9-4f61-8b3c-8cf9f387a748'
+  label: 'Who We Help'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

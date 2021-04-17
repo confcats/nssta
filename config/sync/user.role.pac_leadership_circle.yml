@@ -1,0 +1,9 @@
+uuid: 4fca7214-5a5d-4cb0-9921-4dd3688a3b6b
+langcode: en
+status: true
+dependencies: {  }
+id: pac_leadership_circle
+label: 'PAC Leadership Circle'
+weight: -5
+is_admin: null
+permissions: {  }

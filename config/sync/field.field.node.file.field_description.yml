@@ -1,0 +1,21 @@
+uuid: f7644af8-fa82-453e-aadb-055706789161
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.file
+  module:
+    - text
+id: node.file.field_description
+field_name: field_description
+entity_type: node
+bundle: file
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

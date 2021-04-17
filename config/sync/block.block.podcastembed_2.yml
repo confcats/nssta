@@ -1,0 +1,39 @@
+uuid: b87648e9-4e07-48a8-a057-5e91ca24e4fb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:31cae822-0f12-45f7-b1e9-e822f61bc1f8'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - nssta
+id: podcastembed_2
+theme: nssta
+region: content
+weight: -19
+provider: null
+plugin: 'block_content:31cae822-0f12-45f7-b1e9-e822f61bc1f8'
+settings:
+  id: 'block_content:31cae822-0f12-45f7-b1e9-e822f61bc1f8'
+  label: 'Podcast Embed'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

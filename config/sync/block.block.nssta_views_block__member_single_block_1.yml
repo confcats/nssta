@@ -1,0 +1,30 @@
+uuid: 105620cf-9400-437f-ac14-27cb94338c99
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.member_single
+  module:
+    - system
+    - views
+  theme:
+    - nssta
+id: nssta_views_block__member_single_block_1
+theme: nssta
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:member_single-block_1'
+settings:
+  id: 'views_block:member_single-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/member/*'
+    negate: false
+    context_mapping: {  }

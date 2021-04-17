@@ -1,0 +1,27 @@
+uuid: 0d7c6dd9-5430-4ace-b6f7-877dc9b4f97b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_file
+    - node.type.article
+  module:
+    - file
+id: node.article.field_page_file
+field_name: field_page_file
+entity_type: node
+bundle: article
+label: 'Page File'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'article/[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

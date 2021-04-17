@@ -1,0 +1,18 @@
+uuid: ed842770-2657-4684-887f-10cd95acef53
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_exclude
+id: content_exclude_
+label: 'Content (Exclude)'
+path: content
+weight: -10
+plugin: search_exclude_node_search
+configuration:
+  rankings: {  }
+  excluded_bundles:
+    file: file
+    file_member_only: file_member_only
+    sponsor: sponsor
+    webform: webform

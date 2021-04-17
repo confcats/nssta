@@ -1,0 +1,47 @@
+uuid: f82043b1-2cfe-448e-a3eb-ddbf8db14bae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_address_1
+    - field.field.user.user.field_address_2
+    - field.field.user.user.field_city
+    - field.field.user.user.field_company
+    - field.field.user.user.field_fax
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_member_image
+    - field.field.user.user.field_middle_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_public_email
+    - field.field.user.user.field_state
+    - field.field.user.user.field_website
+    - field.field.user.user.field_zip_code
+    - field.field.user.user.user_picture
+  module:
+    - user
+_core:
+  default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content: {  }
+hidden:
+  field_address_1: true
+  field_address_2: true
+  field_city: true
+  field_company: true
+  field_fax: true
+  field_first_name: true
+  field_last_name: true
+  field_member_image: true
+  field_middle_name: true
+  field_phone: true
+  field_public_email: true
+  field_state: true
+  field_website: true
+  field_zip_code: true
+  langcode: true
+  member_for: true
+  user_picture: true

@@ -1,0 +1,30 @@
+uuid: e5861ca8-273a-4276-86e7-1f0a4da7761c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.calendar
+  module:
+    - system
+    - views
+  theme:
+    - nssta
+id: next_event
+theme: nssta
+region: featured_top
+weight: -17
+provider: null
+plugin: 'views_block:calendar-block_2'
+settings:
+  id: 'views_block:calendar-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,48 @@
+uuid: 5da4d9a9-cb12-402b-8ea7-ab37ee7e5a96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.file_member_only.field_file_member_only
+    - field.field.node.file_member_only.field_file_weight
+    - field.field.node.file_member_only.field_filetag
+    - node.type.file_member_only
+  module:
+    - file
+    - options
+    - user
+id: node.file_member_only.default
+targetEntityType: node
+bundle: file_member_only
+mode: default
+content:
+  field_file_member_only:
+    weight: 101
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_file_weight:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_filetag:
+    weight: 102
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

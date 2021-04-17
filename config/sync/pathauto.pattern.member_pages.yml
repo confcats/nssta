@@ -1,0 +1,14 @@
+uuid: 42de720f-0b8f-4422-b340-21941c272c73
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: member_pages
+label: 'Member/user pages'
+type: 'canonical_entities:user'
+pattern: 'member/[user:field_first_name]-[user:field_last_name]'
+selection_criteria: {  }
+selection_logic: and
+weight: -5
+relationships: {  }

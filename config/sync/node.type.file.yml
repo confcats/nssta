@@ -1,0 +1,17 @@
+uuid: 2706c21b-82de-4cde-bc35-eb1266c33bbf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: File
+type: file
+description: 'For adding any files to the site.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

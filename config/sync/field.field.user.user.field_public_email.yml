@@ -1,0 +1,20 @@
+uuid: 0a3d9517-2f80-448a-83f1-6395051ed20d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_public_email
+  module:
+    - user
+id: user.user.field_public_email
+field_name: field_public_email
+entity_type: user
+bundle: user
+label: 'Public Email'
+description: 'Use this field so your email will show up to public users and other members. While this field can be the same as your login, it does not have to be.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

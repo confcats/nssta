@@ -1,0 +1,14 @@
+uuid: 53d6dff7-fd9e-4e79-9db2-7822ed41c181
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  description: 'Structured settlements are an innovative and proven method of compensating injury victims in legal settlements. Encouraged by the U.S. Congress since 1982, a structured settlement is a voluntary agreement between the injury victim and the defendant.'
+  robots: 'index, follow'
+  title: '[site:name] | [current-page:title]'
+  keywords: 'structured settlement, annuity, personal injury, workers'' compensation, medical malpractice, wrongful death'
+  canonical_url: '[current-page:url]'

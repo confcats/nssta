@@ -1,0 +1,28 @@
+uuid: 67c07b9d-2200-4e85-a9f1-fd7b33b980f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_libraries
+    - node.type.page_member_only
+    - taxonomy.vocabulary.file_tags
+id: node.page_member_only.field_file_libraries
+field_name: field_file_libraries
+entity_type: node
+bundle: page_member_only
+label: 'File Libraries'
+description: 'Add libraries to this page, under the content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      file_tags: file_tags
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

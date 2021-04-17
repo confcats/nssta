@@ -1,0 +1,9 @@
+uuid: 89d2ec06-884e-44fd-83ef-f5505ebb4627
+langcode: en
+status: true
+dependencies: {  }
+id: board_member
+label: 'Board Member'
+weight: -7
+is_admin: null
+permissions: {  }

@@ -1,0 +1,32 @@
+uuid: f854b19e-7bca-4586-a881-db8cc4f425e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page_member_only.body
+    - field.field.node.page_member_only.field_file_libraries
+    - node.type.page_member_only
+  module:
+    - text
+    - user
+id: node.page_member_only.default
+targetEntityType: node
+bundle: page_member_only
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_file_libraries: true
+  langcode: true

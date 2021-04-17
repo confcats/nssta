@@ -1,0 +1,30 @@
+uuid: 849b104b-71a4-49e9-9767-7e4a9e0a21d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.public_resources_literature
+  module:
+    - system
+    - views
+  theme:
+    - nssta
+id: views_block__public_resources_literature_block_2
+theme: nssta
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:public_resources_literature-block_2'
+settings:
+  id: 'views_block:public_resources_literature-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /structured-settlements/public-resources/literature
+    negate: false
+    context_mapping: {  }

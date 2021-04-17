@@ -1,0 +1,27 @@
+uuid: 86c1e399-8b11-44ef-aac2-51ee38d62b59
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - nssta
+_core:
+  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
+id: nssta_footer
+theme: nssta
+region: footer_first
+weight: -18
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Site map'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

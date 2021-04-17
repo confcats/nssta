@@ -1,0 +1,31 @@
+uuid: 0a1619a7-8e77-4f57-a0aa-7a2a0659f5c9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:35bfe2cf-7808-49bc-bc45-a1f61a62691f'
+  module:
+    - block_content
+    - system
+  theme:
+    - nssta
+id: memberpages
+theme: nssta
+region: featured_bottom
+weight: -16
+provider: null
+plugin: 'block_content:35bfe2cf-7808-49bc-bc45-a1f61a62691f'
+settings:
+  id: 'block_content:35bfe2cf-7808-49bc-bc45-a1f61a62691f'
+  label: 'Member Pages'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /member-portal
+    negate: false
+    context_mapping: {  }

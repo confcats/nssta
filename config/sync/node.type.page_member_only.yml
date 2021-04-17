@@ -1,0 +1,18 @@
+uuid: c838af82-6647-4e4d-93cf-e014f3eb76b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - members
+    parent: 'members:'
+name: 'Page (Member ONLY)'
+type: page_member_only
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

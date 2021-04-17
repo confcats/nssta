@@ -1,0 +1,22 @@
+uuid: 569c14d1-0ef8-443b-be68-2aad6516ca18
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: company_p
+label: 'Company Pages'
+type: 'canonical_entities:node'
+pattern: 'company/[node:title]'
+selection_criteria:
+  3a9caaa8-4bbb-4a6b-aa29-0417e8504b83:
+    id: node_type
+    bundles:
+      company: company
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3a9caaa8-4bbb-4a6b-aa29-0417e8504b83
+selection_logic: and
+weight: -7
+relationships: {  }

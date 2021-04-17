@@ -1,0 +1,30 @@
+uuid: dcd67bcc-d26d-4413-a4c7-08466bc415dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.company.field_company_type
+    - node.type.company
+  module:
+    - options
+    - user
+id: node.company.default
+targetEntityType: node
+bundle: company
+mode: default
+content:
+  field_company_type:
+    weight: 102
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

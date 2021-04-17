@@ -1,0 +1,58 @@
+uuid: 097deabb-1b12-447a-9bd6-44e2ee999d33
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_address_1
+    - field.field.user.user.field_address_2
+    - field.field.user.user.field_city
+    - field.field.user.user.field_company
+    - field.field.user.user.field_fax
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_member_image
+    - field.field.user.user.field_middle_name
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_public_email
+    - field.field.user.user.field_state
+    - field.field.user.user.field_website
+    - field.field.user.user.field_zip_code
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: C3k_McOy8bL8rTnIjspy5OfFdgqV1z6OdGZaI-tO5eM
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+    region: content
+hidden:
+  field_address_1: true
+  field_address_2: true
+  field_city: true
+  field_company: true
+  field_fax: true
+  field_first_name: true
+  field_last_name: true
+  field_member_image: true
+  field_middle_name: true
+  field_phone: true
+  field_public_email: true
+  field_state: true
+  field_website: true
+  field_zip_code: true
+  langcode: true
+  member_for: true

@@ -1,0 +1,30 @@
+uuid: e4c77c85-2c7d-42c3-96ea-4d5790d7582c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blogs
+  module:
+    - system
+    - views
+  theme:
+    - nssta
+id: nssta_views_block__blogs_block_1
+theme: nssta
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:blogs-block_1'
+settings:
+  id: 'views_block:blogs-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '10'
+visibility:
+  request_path:
+    id: request_path
+    pages: /structured-settlements/public-resources/stories
+    negate: false
+    context_mapping: {  }

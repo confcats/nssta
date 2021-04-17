@@ -1,0 +1,31 @@
+uuid: 1dd730f9-d4bd-4180-889e-12263ab42b7d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3e383277-9545-4e57-8b13-0a9c69e673f3'
+  module:
+    - block_content
+    - system
+  theme:
+    - nssta
+id: nssta_homeherocontent
+theme: nssta
+region: header
+weight: -17
+provider: null
+plugin: 'block_content:3e383277-9545-4e57-8b13-0a9c69e673f3'
+settings:
+  id: 'block_content:3e383277-9545-4e57-8b13-0a9c69e673f3'
+  label: 'Home Hero Content'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

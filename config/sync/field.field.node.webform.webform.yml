@@ -1,0 +1,25 @@
+uuid: cef636fb-7c3f-4e98-9577-a524891e4f57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.webform
+    - node.type.webform
+  module:
+    - webform
+_core:
+  default_config_hash: Ah32zPb-fAH7Xl1tYWO2NLF8me2sOT17_ojHLQ6bdTg
+id: node.webform.webform
+field_name: webform
+entity_type: node
+bundle: webform
+label: Webform
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings: {  }
+field_type: webform

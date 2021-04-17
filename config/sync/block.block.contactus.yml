@@ -1,0 +1,25 @@
+uuid: b254814b-8354-4fdb-a983-9fbbc90e6187
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ddbeec77-03cd-472f-a8e6-df0e43cb3528'
+  module:
+    - block_content
+  theme:
+    - nssta
+id: contactus
+theme: nssta
+region: footer_second
+weight: -14
+provider: null
+plugin: 'block_content:ddbeec77-03cd-472f-a8e6-df0e43cb3528'
+settings:
+  id: 'block_content:ddbeec77-03cd-472f-a8e6-df0e43cb3528'
+  label: Contact
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

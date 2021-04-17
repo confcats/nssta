@@ -1,0 +1,29 @@
+uuid: 3f6285f8-0a1e-4d0f-81cd-18cbc37de7ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nssta
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: nssta_local_tasks
+theme: nssta
+region: content
+weight: -15
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/member-portal"
+    negate: true
+    context_mapping: {  }

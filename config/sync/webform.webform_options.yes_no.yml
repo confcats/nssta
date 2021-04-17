@@ -1,0 +1,11 @@
+uuid: 0c00ed8a-512e-48ab-973d-009d87d8ca73
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kGcyvGIBbrKIldiBULRu57_uvgRE0lEsnBvFA16brf4
+id: yes_no
+label: Yes/No
+category: General
+likert: false
+options: "Yes: Yes\nNo: No\n"

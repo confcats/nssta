@@ -1,0 +1,38 @@
+uuid: 31012dcd-5432-49f5-8f7f-94ccd54a122c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_conference_date
+    - field.field.node.event.field_conference_date_end
+    - field.field.node.event.field_location
+    - node.type.event
+  module:
+    - text
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_conference_date: true
+  field_conference_date_end: true
+  field_location: true
+  langcode: true

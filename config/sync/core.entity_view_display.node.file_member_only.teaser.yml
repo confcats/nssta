@@ -1,0 +1,28 @@
+uuid: 06b652e1-b445-4e8a-8166-746d5857a281
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.file_member_only.field_file_member_only
+    - field.field.node.file_member_only.field_file_weight
+    - field.field.node.file_member_only.field_filetag
+    - node.type.file_member_only
+  module:
+    - user
+id: node.file_member_only.teaser
+targetEntityType: node
+bundle: file_member_only
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_file_member_only: true
+  field_file_weight: true
+  field_filetag: true
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: 369bdab0-ac74-461e-9384-dc02c7789fed
+langcode: en
+status: true
+dependencies: {  }
+id: super_simple
+label: 'Super Simple'
+locked: false
+pattern: m/d/Y

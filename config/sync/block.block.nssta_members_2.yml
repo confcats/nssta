@@ -1,0 +1,25 @@
+uuid: c8eec4ca-8c6c-4b81-9169-b8188fe173f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.members
+  module:
+    - system
+  theme:
+    - nssta
+id: nssta_members_2
+theme: nssta
+region: secondary_menu
+weight: -12
+provider: null
+plugin: 'system_menu_block:members'
+settings:
+  id: 'system_menu_block:members'
+  label: Members
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

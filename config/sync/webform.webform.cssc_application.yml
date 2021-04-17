@@ -1,0 +1,239 @@
+uuid: b9574a5d-4684-484f-b415-f8f40d147626
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 3430
+template: false
+archive: false
+id: cssc_application
+title: 'CSSC Application'
+description: ''
+category: ''
+elements: "contact_information:\n  '#type': fieldset\n  '#title': 'Contact Information'\n  description:\n    '#type': webform_markup\n    '#markup': \"<strong>Agreement: </strong>I understand that the NSSTA CSSC/MSSC Committee must favorably consider this application prior to acceptance. By submitting this form,&nbsp;I declare that the facts herein are true and complete to the best of my knowledge. I also state that my organization, voting and professional members are actively involved in, associated with, or have an interest in the furtherance of periodic payment of compensation on account of personal physical injuries as set forth in Article II of the NSSTA Bylaws.<br />\\n<br />\\nPlease use the space below to fill out your personal information for the CSSC Program\"\n  full_name_:\n    '#type': textfield\n    '#title': 'Full Name '\n    '#required': true\n  title:\n    '#type': textfield\n    '#title': Title\n  company_name_:\n    '#type': textfield\n    '#title': 'Company Name '\n    '#required': true\n  street_address:\n    '#type': textfield\n    '#title': 'Street Address'\n    '#required': true\n  city:\n    '#type': textfield\n    '#title': City\n    '#required': true\n  state:\n    '#type': select\n    '#title': State\n    '#options': state_codes\n    '#required': true\n  zip_code:\n    '#type': textfield\n    '#title': 'Zip Code'\n    '#required': true\n  telephone_number:\n    '#type': tel\n    '#title': 'Telephone Number'\n    '#required': true\n  email_address:\n    '#type': email\n    '#title': 'Email Address'\n    '#required': true\nnssta_membership:\n  '#type': fieldset\n  '#title': 'NSSTA Membership'\n  description_member:\n    '#type': webform_markup\n    '#markup': 'Please indicate below if you are a current NSSTA Member'\n  nssta_member:\n    '#type': checkboxes\n    '#title': 'NSSTA Membership'\n    '#options':\n      nssta_member: 'I am a current member of NSSTA'\n      non_member: 'I am NOT a current member of NSSTA'\n    '#required': true\nstructured_settlement_experience:\n  '#type': fieldset\n  '#title': 'Structured Settlement Industry Experience'\n  description_ss_experience:\n    '#type': webform_markup\n    '#markup': 'Please describe your Structured Settlement Industry&nbsp;experience with the following questions listed below:'\n  what_is_your_full_time_occupation:\n    '#type': textarea\n    '#title': 'What is your Full-Time Occupation?'\n    '#required': true\n  relate_to_the_structured_settlements:\n    '#type': textarea\n    '#title': 'How does your job relate to the structured settlement business?'\n    '#required': true\n  two_years_experience:\n    '#type': checkboxes\n    '#title': 'Have you sold structured settlement products for two consecutive years?'\n    '#description': 'Have you sold structured settlement products through a life insurance company for two consecutive years or appointed by a brokerage company to handle structured settlement products?'\n    '#options':\n      'yes': 'Yes'\n      'no': 'No'\n    '#required': true\n  additional_two_years_info:\n    '#type': textarea\n    '#title': 'If so, please list the companies with whom you are appointed:'\n  other_relevant_information_:\n    '#type': textarea\n    '#title': 'Other relevant information:'\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: inline
+  confirmation_title: ''
+  confirmation_message: 'Thank You, Your CSSC Application has been submitted!'
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    notes: ''
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: dsink@nssta.com
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: info@nssta.com
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

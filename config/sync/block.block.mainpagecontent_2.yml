@@ -1,0 +1,25 @@
+uuid: bb49bc87-fb7e-4ffd-881e-30b367d07088
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nssta
+id: mainpagecontent_2
+theme: nssta
+region: content
+weight: -10
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/member-portal"
+    negate: true
+    context_mapping: {  }

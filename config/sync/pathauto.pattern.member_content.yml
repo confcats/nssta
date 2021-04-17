@@ -1,0 +1,22 @@
+uuid: 80bebc2e-2b83-473f-8dc6-a2e545753877
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: member_content
+label: 'Member Files'
+type: 'canonical_entities:node'
+pattern: 'member-portal/files/[node:title]'
+selection_criteria:
+  033c5584-9d44-4113-8f6a-993eb415dc92:
+    id: node_type
+    bundles:
+      file_member_only: file_member_only
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 033c5584-9d44-4113-8f6a-993eb415dc92
+selection_logic: and
+weight: -9
+relationships: {  }

@@ -1,0 +1,23 @@
+uuid: eefa33de-0cd3-4a05-a99d-3371705a4ac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_weight
+    - node.type.file_member_only
+  module:
+    - options
+id: node.file_member_only.field_file_weight
+field_name: field_file_weight
+entity_type: node
+bundle: file_member_only
+label: 'File Weight'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

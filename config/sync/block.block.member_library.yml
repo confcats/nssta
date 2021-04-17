@@ -1,0 +1,30 @@
+uuid: 55bae413-a382-4c18-93c1-10c759bfbfc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.file_libraries
+  module:
+    - system
+    - views
+  theme:
+    - nssta
+id: member_library
+theme: nssta
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:file_libraries-block_2'
+settings:
+  id: 'views_block:file_libraries-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/member-portal/*'
+    negate: false
+    context_mapping: {  }
