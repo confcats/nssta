@@ -1,0 +1,34 @@
+.sponsors {
+  padding: 50px 0px;
+  position: relative;
+}
+
+.sponsors h2 {
+  margin: 0;
+  font-size: 24px;
+  border-bottom: 1px solid #4D4D4D;
+}
+
+.swiper-container, .swiper-wrapper {
+  position: static !important;
+}
+
+.swiper-container {
+  margin-top: 2em;
+}
+
+.swiper-wrapper {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.swiper-slide a {
+  border: none;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background: none !important;
+  padding: 2em;
+}

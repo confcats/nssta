@@ -1,0 +1,64 @@
+/**
+ * @file
+ * The visual styles for NSSTA's search form(s).
+ */
+
+.search-form .form-search {
+  width: 200px;
+  float: left; /* LTR */
+  padding: 4px;
+  padding-right: 34px;
+  border: 1px solid #00447B;
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+}
+
+.path-frontpage.top .search-form .form-search {
+  color: white;
+  border-color: white;
+}
+
+[dir="rtl"] .search-form .form-search {
+  float: right;
+  margin-left: 5px;
+  margin-right: 0;
+}
+.button.search-form__submit,
+.search-form__submit {
+  background: url(../../images/search-dark.svg) no-repeat center;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  margin-top: 6px;
+  margin-left: -34px;
+  margin-right: 0;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -9999px;
+  direction: ltr;
+  width: 30px;
+}
+.path-frontpage.top .button.search-form__submit,
+.path-frontpage.top .search-form__submit {
+  background: url(../../images/search-light.svg) no-repeat center;
+}
+.button.search-form__submit:hover,
+.search-form__submit:hover,
+.button.search-form__submit:focus,
+.search-form__submit:focus {
+  background: url(../../images/search-dark.svg) no-repeat center;
+}
+.path-frontpage.top .button.search-form__submit:hover,
+.path-frontpage.top .search-form__submit:hover,
+.path-frontpage.top .button.search-form__submit:focus,
+.path-frontpage.top .search-form__submit:focus {
+  background: url(../../images/search-light.svg) no-repeat center;
+}
+.search-form .form-item-keys label {
+  display: block;
+}
+
+.search-help-link {
+  margin-left: 1em;
+}

@@ -1,0 +1,104 @@
+/**
+ * @file
+ * Styles for NSSTA's tables.
+ */
+
+table {
+  border: 0;
+  border-spacing: 0;
+  font-size: 0.857em;
+  margin: 10px 0;
+  width: 100%;
+  background-color: #E8DAAC;
+  border-radius: 12px;
+}
+table table {
+  font-size: 1em;
+}
+table caption {
+  font-size: 26px;
+  text-align: left;
+  margin: 1em 0em;
+  border-bottom: 1px solid #4D4D4D;
+}
+tr {
+  padding: 1em;
+  /*background: #efefef;
+  background: rgba(0, 0, 0, 0.063);*/
+}
+tr:nth-child(odd) {
+  background-color: #F7F3E3;
+}
+.main-content td, .main-content td a {
+  /*color: #4D4D4D;*/
+}
+.main-content td a:hover {
+  color: #C9A93D;
+}
+td, th {
+  /*white-space: nowrap;*/
+  border-left: 2px solid white;
+}
+td:first-child, th:first-child {
+  /*white-space: normal;*/
+  border: none;
+}
+td.is-active {
+  background-color: transparent;
+}
+thead > tr {
+  background-color: transparent !important;
+}
+.main-content thead a {
+  color: #4D4D4D;
+}
+tr.odd {
+  background: #e4e4e4;
+  background: rgba(0, 0, 0, 0.105);
+}
+/*table tr th {
+  background: #E8DAAC;
+  background: rgba(0, 0, 0, 0.51);
+  border-bottom-style: none;
+}*/
+table tr th,
+table tr th a,
+table tr th a:hover,
+table tr th a:focus {
+  color: #4D4D4D;
+  font-weight: bold;
+}
+table tbody tr th {
+  vertical-align: top;
+}
+tr td,
+tr th {
+  padding: 10px 15px;
+  text-align: left;
+}
+.tabledrag-handle:hover,
+.tabledrag-handle {
+  border: none;
+}
+[dir="rtl"] tr td,
+[dir="rtl"] tr th {
+  text-align: right;
+}
+
+/**
+ * Responsive tables.
+ */
+@media screen and (max-width: 37.5em) { /* 600px */
+  th.priority-low,
+  td.priority-low,
+  th.priority-medium,
+  td.priority-medium {
+    display: none;
+  }
+}
+@media screen and (max-width: 60em) { /* 920px */
+  th.priority-low,
+  td.priority-low {
+    display: none;
+  }
+}

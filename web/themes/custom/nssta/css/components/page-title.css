@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Visual styles for NSSTA's page-title component.
+ */
+
+.page-title {
+  width: 100%;
+  font-size: 4em;
+  line-height: 1.2;
+  margin: 0;
+  color: #00447B;
+}

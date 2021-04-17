@@ -1,0 +1,50 @@
+.path-frontpage.top .site-branding__logo, .path-frontpage.top .logo-light {
+  width: 250px;
+  height: auto;
+}
+
+.path-frontpage {
+  background-image: url(../images/whowehelp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.path-frontpage #page-wrapper {
+  background-color: rgba(255,255,255,.2);
+}
+
+.path-frontpage .sponsors {
+  background-color: white;
+}
+
+.path-frontpage .sidebar #block-findamembersidebar {
+  border-color: #00447B;
+  background-color: white;
+}
+
+.path-frontpage .sidebar #block-findamembersidebar h2 {
+  background-color: #00447B;
+}
+
+.path-frontpage .sidebar #block-findamembersidebar p {
+  color: #00447B;
+}
+
+.path-frontpage .sidebar #block-findamembersidebar a {
+  color: #00447B;
+  border-color: #00447B;
+}
+
+.path-frontpage .sidebar #block-findamembersidebar a:hover {
+  background-color: #00447B;
+}
+
+@media screen and (max-width:1000px) {
+  .path-frontpage.top .site-branding__logo, .path-frontpage.top .logo-light {
+    width: 200px;
+    height: auto;
+  }
+}

@@ -1,0 +1,20 @@
+/**
+ * @file
+ * Toolbar module overrides for NSSTA.
+ */
+
+#page-wrapper {
+  position: relative;
+}
+
+body.toolbar-vertical {
+  margin-left: 0 !important;
+}
+
+.toolbar {
+  z-index: 10000;
+}
+
+.toolbar a {
+  border-bottom: none;
+}

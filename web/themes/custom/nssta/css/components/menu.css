@@ -1,0 +1,49 @@
+/**
+ * @file
+ * Styles for menus in NSSTA.
+ */
+
+/* This is needed to override ul.menu styles in menu.theme.css */
+
+ul.menu {
+  margin: 0;
+  padding: 0 0 0.25em 0;
+}
+
+ul.menu a.is-active {
+  color: #C9A93D;
+}
+
+/* This is needed to override [dir="rtl"] ul.menu styles in menu.theme.css */
+[dir="rtl"] ul.menu {
+  margin: 0;
+}
+
+.path-frontpage.top .logo-light, .path-frontpage.top .member-light {
+  display: block;
+}
+
+.path-frontpage.top .logo-dark, .path-frontpage.top .member-dark, .logo-light, .member-light, .user-logged-in .member-login {
+  display: none;
+}
+
+.user-logged-in .secondary-menu {
+  display: inline-block;
+}
+
+.logo-light, .logo-dark {
+  width: 199px;
+  height: 54.11px;
+}
+
+.member-login {
+  padding: 1em;
+  font-weight: 300;
+  position: relative;
+  z-index: 9999;
+  display: inline-block;
+}
+
+.member-login:hover {
+  color: #C9A93D !important;
+}

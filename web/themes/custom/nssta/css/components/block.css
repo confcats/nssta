@@ -1,0 +1,119 @@
+/**
+ * @file
+ * Visual styles for NSSTA's blocks.
+ */
+
+/* Block has it's own content wrapper. */
+
+.block-views-blockblogs-block-2 h2:not(.node__title) {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 25px 40px;
+  background-color: #7197B6;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.block-views-blockblogs-block-2 .field--name-field-tags {
+  display: none;
+}
+
+.block-views-blockblogs-block-2 .content, .block-views-blockblogs-block-2 p {
+  margin: 0;
+}
+
+.block-views-blockblogs-block-2 p {
+  margin-top: 1em;
+}
+
+.block-views-blockblogs-block-2 .views-row {
+  color: white;
+  padding: 25px 40px;
+  font-weight: 300;
+}
+
+.block-views-blockblogs-block-2 .views-row a {
+  font-size: 20px;
+  display: block;
+  color: #00447B;
+  margin-right: 1em;
+  font-weight: normal;
+}
+
+.block-views-blockblogs-block-2 .views-row a:hover {
+  color: #00447B;
+  opacity: .7;
+}
+
+.block-views-blockblogs-block-2 .views-row:first-child {
+  background-color: #8EACC4;
+}
+
+.block-views-blockblogs-block-2 .views-row:nth-of-type(2), .block-views-blockblogs-block-2 .more-link {
+  background-color: #7196b5;
+}
+
+.block-views-blockblogs-block-2 .more-link {
+  padding: 10px 0px 40px 0px;
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.block-views-blockblogs-block-2 .more-link a {
+  color: #00447B;
+  padding: 10px 30px;
+  border: 1px solid #00447B;
+  border-radius: 8px;
+}
+
+.block-views-blockblogs-block-2 .more-link a:hover {
+  color: #7197B6;
+  background-color: #00447B;
+}
+
+#block-files-latest {
+  background-color: #E8DAAC;
+  padding: 0px 35px 10px 35px;
+  border-radius: 12px;
+}
+
+#block-files-latest h2 {
+  color: white;
+  padding: 25px 0px 10px 0px;
+  margin: 0;
+}
+
+#block-files-latest .more-link {
+  margin: 25px 0px;
+  text-align: center;
+}
+
+#block-files-latest .more-link a {
+  color: #4D4D4D;
+  padding: 10px 30px;
+  border: 1px solid #4D4D4D;
+  border-radius: 8px;
+}
+
+#block-files-latest .more-link a:hover {
+  color: #E8DAAC;
+  background-color: #4D4D4D;
+}
+
+#block-files-latest td {
+  white-space: nowrap;
+}
+
+#block-files-latest td:first-child {
+  white-space: normal;
+}
+
+@media screen and (max-width:600px) {
+  #block-files-latest td {
+    white-space: normal;
+  }
+}
+
+.view-blogs article header .node__meta {display: none;}

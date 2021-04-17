@@ -1,0 +1,178 @@
+/**
+ * @file
+ * Styles for NSSTA's highlighted component.
+ */
+
+.has-featured-top .region-highlighted {
+  background: #f0f0f0;
+  background: rgba(30, 50, 10, 0.08);
+}
+
+#block-nssta-whowehelp, #block-memberpages, #block-next-event, #block-memberportalsearch {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 3em 0em 4em 0em;
+  position: relative;
+}
+
+#block-nssta-whowehelp {
+  background-image: url(../../images/gplaypattern.png);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto;
+}
+
+#block-memberpages {
+  background-image: url(../../images/memberpage.jpg);
+}
+
+#block-next-event, #block-memberportalsearch {
+  padding: 0;
+  background-attachment: scroll;
+  background-image: url(../../images/upcomingevent.jpg);
+}
+
+#block-nssta-whowehelp h2 {
+  color: #00447B;
+  font-size: 26px;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-bottom: 1px solid #00447B;
+}
+
+#block-nssta-whowehelp h2, #block-nssta-whowehelp .content ul, #block-memberpages .content ul {
+  position: relative;
+  z-index: 1;
+}
+
+#block-nssta-whowehelp .content ul, #block-memberpages .content ul {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#block-nssta-whowehelp .content li, #block-memberpages .content li {
+  float: left;
+  text-align: center;
+}
+
+#block-nssta-whowehelp .content li {
+  width: 33.33%;
+}
+
+#block-memberpages .content li {
+  width: 25%;
+}
+
+#block-nssta-whowehelp .button-light, #block-memberpages .button-light {
+  text-align: center;
+  font-size: 22px;
+  color: #00447B;
+  border: none;
+  display: inline-block;
+  border: 2px solid #00447B;
+  border-radius: 12px;
+  padding: 10px 35px;
+  transition: all ease .3s;
+  -o-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -webkit-transition: all ease .3s;
+}
+
+#block-memberpages .button-light {
+  color: white;
+  border-color: white;
+}
+
+#block-nssta-whowehelp .button-light:hover {
+  background-color: #00447B;
+  color: white;
+}
+
+#block-memberpages .button-light:hover {
+  background-color: white;
+  color: rgba(0, 68, 123, .5);
+}
+
+#block-nssta-whowehelp .content img, #block-memberpages .content img {
+  display: block;
+  margin: 2em 0em;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#block-nssta-whowehelp .whowehelp-filter, #block-memberpages .memberpage-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 0;
+}
+
+#block-nssta-whowehelp .whowehelp-filter {
+  background-color: rgba(77, 77, 77, .5);
+  opacity: 0;
+}
+
+#block-memberpages .memberpage-filter {
+  background-color: rgba(0, 68, 123, .5);
+}
+
+#block-next-event .view-content, #block-memberportalsearch .content {
+  text-align: center;
+  padding: 3em 0em;
+  /*background-color: rgba(77, 77, 77, .3);*/
+  background-color: rgba(0, 68, 123, .5);
+}
+
+#block-next-event .field-content, #block-memberportalsearch .content {
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+#block-next-event .view-content a, #block-memberportalsearch .content a {
+  color: white;
+  font-weight: normal;
+  padding: 15px 35px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+#block-next-event .view-content a:hover, #block-memberportalsearch .content a:hover {
+  color: gray;
+  background-color: white;
+}
+
+@media screen and (max-width:1024px) {
+  #block-nssta-whowehelp h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width:850px) {
+  #block-memberpages .content li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  #block-nssta-whowehelp .content li {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:375px) {
+  #block-memberpages .content li {
+    width: 100%;
+    float: none;
+  }
+}

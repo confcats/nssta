@@ -1,0 +1,173 @@
+
+
+@media print {
+
+    /* --- Page Structure (margin /font sizes) ---*/
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            line-height: 1.2;
+            font-family: 'Lato',sans-serif;
+            font-size: 12px;
+        }
+
+
+        @page {
+            margin: 0.9cm;
+            size: landscape;
+        }
+
+        .main-wrapper {
+            padding: 0;
+        }
+
+    /*----End of Page Structure---*/
+
+
+    /*---- Page Breaks ----*/
+        h1, h2, h3, h4, h5, h6 {
+            page-break-after:avoid;
+            page-break-inside:avoid
+        }
+
+        table tr, a {
+            page-break-inside:avoid
+        }
+
+    /* ---- End Page Breaks ----*/
+
+
+    /*----- Hidden Section -----*/
+        .content .view-member-search .view-filters,
+        .content .view-member-search .view-header,
+        #page .hero, .header-float, .site-footer,
+        .pager, a.is-active, div#toolbar-administration
+        {
+            display: none !important;
+        }
+
+        .header-float .header-top-nav {
+            display: hidden;
+        }
+
+    /*----- End Hidden Section -----*/
+
+
+    /*----- General Content -------*/
+        body.user-logged-in {
+            padding-top: 0 !important;
+        }
+        
+        a[href^=http]:after {
+            content:" <" attr(href) "> ";
+        }
+
+        .view-member-search table {
+            margin: 0;
+            background-color: #E8DAAC;
+            width: 10.5in;
+        }
+
+        .view-member-search table thead {
+            background-color: #E8DAAC;
+        }
+
+        .view-member-search table tr:nth-child(odd) {
+            background-color: #F7F3E3;
+        }
+
+        .view-member-search table tr {
+            border-bottom: 1px solid #ddd !important;
+        }
+
+        .view-member-search table tr td, table tr th {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+        }
+
+        .view-member-search td:last-child, .view-member-search th:last-child {
+            width: 82px !important;
+        }
+
+        .view-member-search table th:nth-of-type(9) {
+            width: 53px;
+        }
+
+        #content > section {
+            padding-left: 0;
+        }
+
+        #header {
+           border-bottom: none;
+        }
+
+        #main-wrapper {
+            padding-top: 0.4cm;
+        }
+
+
+    /*----- End General Content -------*/
+}
+
+
+
+
+
+/************** old stuff down there *************/
+
+
+    input,
+    textarea,
+    select {
+        color: #000;
+        background: none;
+    }
+
+    body.two-sidebars,
+    body.sidebar-first,
+    body.sidebar-second,
+    body {
+        width: 640px;
+    }
+
+    #sidebar-first,
+    #sidebar-second,
+    .navigation,
+    #toolbar,
+    .site-footer,
+    .tabs,
+    .shortcut-action {
+        display: none;
+    }
+
+    .one-sidebar .main-content,
+    .two-sidebars .main-content {
+        width: 100%;
+    }
+
+    .featured-bottom {
+        width: 960px;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .featured-bottom-first,
+    .featured-bottom-second,
+    .featured-bottom-third {
+        width: 250px;
+    }
+
+    /* ---------- Node Pages ---------- */
+
+    #comments .title,
+    #comments form,
+    .comment-forbidden {
+        display: none;
+    }
+
+
+

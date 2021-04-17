@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Styles for NSSTA's breadcrumbs.
+ */
+
+.breadcrumb {
+  font-family: 'Lato', sans-serif;
+}
+
+.breadcrumb a {
+  font-size: 16px;
+  color: #4D4D4D;
+  border: none;
+}
+
+.breadcrumb a:hover {
+  color: #C9A93D;
+}
+
+.region-breadcrumb {
+  padding: 4em 0em;
+}

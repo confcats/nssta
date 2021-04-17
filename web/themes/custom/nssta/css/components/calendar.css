@@ -1,0 +1,82 @@
+#block-calendar {
+  background-color: #7197B6;
+  border-radius: 12px;
+  padding-bottom: 10px;
+}
+
+#block-calendar h2 {
+  font-size: 1.429em;
+  color: white;
+  padding: 25px 40px;
+}
+
+#block-calendar li {
+  border-radius: 0 !important;
+}
+
+#block-calendar .more-link {
+  margin: 25px 0px;
+  text-align: center;
+}
+
+#block-calendar .more-link a {
+  color: #00447B;
+  padding: 10px 30px;
+  border: 1px solid #00447B;
+  border-radius: 8px;
+}
+
+#block-calendar .more-link a:hover {
+  color: #7197B6;
+  background-color: #00447B;
+}
+
+.calendar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #7197B6;
+  border-radius: 12px;
+  color: white;
+}
+
+.calendar li {
+  padding: 25px 40px;
+}
+
+.calendar li:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.calendar li:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.calendar li:nth-child(odd) {
+  background-color: #8EACC4;
+
+}
+
+.calendar a {
+  color: #00447B;
+  border: none;
+}
+
+.calendar a:hover {
+  color: #C9A93D;
+}
+
+.calendar strong, .views-field-field-conference-date {
+  font-weight: 300;
+}
+
+.views-field-field-conference-date {
+  font-size: 14px;
+}
+
+.calendar .views-field-title {
+  font-size: 22px;
+  margin: .5em 0em;
+}

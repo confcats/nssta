@@ -1,0 +1,223 @@
+{#
+/**
+ * @file
+ * NSSTA's theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template normally located in the
+ * core/modules/system directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.highlighted: Items for the highlighted region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.secondary_menu: Items for the secondary menu region.
+ * - page.featured_top: Items for the featured top region.
+ * - page.content: The main content of the current page.
+ * - page.sidebar_first: Items for the first sidebar.
+ * - page.sidebar_second: Items for the second sidebar.
+ * - page.featured_bottom_first: Items for the first featured bottom region.
+ * - page.featured_bottom_second: Items for the second featured bottom region.
+ * - page.featured_bottom_third: Items for the third featured bottom region.
+ * - page.footer_first: Items for the first footer column.
+ * - page.footer_second: Items for the second footer column.
+ * - page.footer_third: Items for the third footer column.
+ * - page.footer_fourth: Items for the fourth footer column.
+ * - page.footer_fifth: Items for the fifth footer column.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+<div class="mobile-menu">
+  <img class="mobile-searchButton" src="/themes/nssta/images/mobile-icon-01.svg"><img class="mobile-memberButton" src="/themes/nssta/images/mobile-icon-02.svg"><img class="mobile-menuButton" src="/themes/nssta/images/mobile-icon-03.svg">
+</div>
+<div id="page-wrapper">
+  <div id="page">
+    <header id="header" class="header mobile-search-trigger mobile-secondary-trigger mobile-primary-trigger" role="banner" aria-label="{{ 'Site header'|t }}">
+      <div class="section clearfix">
+        <a class="site-branding__logo" href="/">
+          <img class="logo-dark" src="/themes/nssta/images/logo-dark.svg" alt="Home">
+          <img class="logo-light" src="/themes/nssta/images/logo-light.svg" alt="Home">
+        </a>
+        <div class="header-float">
+          <div class="header-top-nav">
+            {{ page.search }}
+            <a class="member-login" href="/user/login">Member Log in</a>
+            <div class="secondary-menu">
+              <img class="member-icon member-dark" src="/themes/nssta/images/member-dark.svg">
+              <img class="member-icon member-light" src="/themes/nssta/images/member-light.svg">
+              {{ page.secondary_menu }}
+            </div>
+          </div>
+          {{ page.primary_menu }}
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero-filter"></div>
+      <video class="hero-video" loop autoplay poster="/themes/nssta/images/poster.png">
+        <source class="mp4" src="/themes/nssta/images/wheelchair-video-nssta.mp4">
+        <source class="webm" type="video/webm; codecs=vp8),vorbis" src="/themes/nssta/images/wheelchair-video-nssta.webm">
+        <source class="ogg" type="video/ogg; codecs=theora),vorbis" src="/themes/nssta/images/wheelchair-video-nssta.ogv">
+      </video>
+      <div class="section layout-container clearfix">
+        {{ page.header }}
+      </div>
+    </div>
+    {% if page.featured_top %}
+      <div class="highlighted">
+        <div class="section clearfix" role="complementary">
+          {{ page.featured_top }}
+        </div>
+      </div>
+    {% endif %}
+    <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix"{% if page.featured_bottom or page.sponsors.length == 0 %} style="padding-bottom: 4em;"{% endif %}>
+      <div id="main" class="layout-main clearfix">
+        <main id="content" class="column main-content" role="main">
+          <section class="section">
+            <a id="main-content" tabindex="-1"></a>
+            {{ page.content }}
+          </section>
+        </main>
+        {% if page.sidebar_first %}
+          <div id="sidebar-first" class="column sidebar">
+            <aside class="section" role="complementary">
+              {{ page.sidebar_first }}
+            </aside>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    {% if page.featured_bottom %}
+      <div class="highlighted">
+        <div class="section clearfix" role="complementary">
+          {{ page.featured_bottom }}
+        </div>
+      </div>
+    {% endif %}
+    {% if page.sponsors %}
+      <div class="sponsors">
+        <div class="layout-container">
+          {{ page.sponsors }}
+          <img class="swiper-button-prev" src="/themes/nssta/images/arrow-left.svg">
+          <img class="swiper-button-next" src="/themes/nssta/images/arrow-right.svg">
+        </div>
+      </div>
+    {% endif %}
+    <footer class="site-footer">
+      <div class="layout-container">
+        {% if page.footer_first %}
+          {{ page.footer_first }}
+        {% endif %}
+        {% if page.footer_second %}
+          {{ page.footer_second }}
+        {% endif %}
+      </div>
+      <div class="social">
+        <a target="_blank" href="https://twitter.com/NSSTADC"><img width="26px" height="26px" src="/themes/nssta/images/social-01.svg"></a>
+        <a target="_blank" href="
+https://www.facebook.com/National-Structured-Settlements-Trade-Association-102587138212/"><img width="26px" height="26px" src="/themes/nssta/images/social-02.svg"></a>
+        <a target="_blank" href="
+https://www.youtube.com/user/StructuredSettlmnts"><img width="26px" height="26px" src="/themes/nssta/images/social-03.svg"></a>
+        <p>©{{ "now"|date("Y") }} The National Structured Settlements Trade Association, All Rights Reserved</p>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+{% if page.sponsors %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-container', {
+    autoHeight         : false,
+    autoplay           : 1000,
+    slidesPerView      : 5,
+    grabCursor         : true,
+    spaceBetween       : 10,
+    speed              : 800,
+    loop               : true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    breakpoints: {
+      450: {
+        slidesPerView: 1,
+      },
+      620: {
+        slidesPerView: 2,
+      },
+      775: {
+        slidesPerView: 3,
+      },
+      850: {
+        slidesPerView: 4
+      }
+    }
+  })
+  $(document).ready(function() {
+    $('.swiper-container').hover(function() {mySwiper.stopAutoplay();}, function() {mySwiper.startAutoplay();})
+  });
+  </script>
+{% endif %}
+{% if is_front and page.sponsors %}
+  <script>
+  var mySwiper = new Swiper('.swiper-events', {
+    autoHeight         : false,
+    autoplay           : 2000,
+    slidesPerView      : 1,
+    grabCursor         : true,
+    speed              : 10000,
+    loop               : true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  })
+  $(document).ready(function() {
+    $('.swiper-events').hover(function() {mySwiper.stopAutoplay();}, function() {mySwiper.startAutoplay();})
+  });
+  </script>
+{% elseif is_front %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-events', {
+    autoHeight         : false,
+    autoplay           : 2000,
+    slidesPerView      : 1,
+    grabCursor         : true,
+    speed              : 10000,
+    loop               : true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  })
+  $(document).ready(function() {
+    $('.swiper-events').hover(function() {mySwiper.stopAutoplay();}, function() {mySwiper.startAutoplay();})
+  });
+  </script>
+{% endif %}
